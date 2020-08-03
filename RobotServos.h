@@ -1,5 +1,5 @@
 // -----
-// RobotServos.h - Library for using servos advancedly.
+// RobotServos.h
 // This class is implemented for use with the Arduino environment.
 // Created by Jack Blair
 // -----
@@ -17,28 +17,29 @@ public:
 
   // ----- Constructor -----
   RobotServos(int rightPin, int leftPin);
+  //Accepts two arguments; first for the Arduino pin which is wired to the right servo, and the other for the left
   
-  // simple retrieve of the state
+  // simple retrieve of the state; will return -1 through 4 (Corresponding to the State enum)
   int getState();
 
-  // adjust the current state
+  // adjust the current state; can change to 0 through 4, according to the State enum
   void setState(int newPosition);
 
+  //will inverse servo output if servos are moving in the opposite direction than desired (Moving backward when "Forward", etc.)
   void inverse();
 
 private:
   int rightServoPin, leftServoPin; // Arduino pins used for the servos. 
 
-  int maxForward = 180, maxBackward = 0;
+  int maxForward = 180, maxBackward = 0; //Set to the max speeds for continuous rotation servos; 
+  //Changing these will change servo movement speed 
 
-  int stopValRight, stopValLeft; //Should be around 90
-
-  State currentState;
+  State currentState; //Keeps track of current state in State and int form
   int currentIntState;
 
-  Servo rServo, lServo;
+  int numTotalStates = 5; //This can be changed if the number of states wants to be expanded upon
+
+  Servo rServo, lServo; //Servo objects for the left and right servos
 };
 
 #endif
-
-// End
