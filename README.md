@@ -13,7 +13,7 @@ To accomplish this, the robot is considered to be in one of several states.
 Both servos are moved at their max speed and will do so until the state is changed to STOP. 
 One major advantage of this library is that there is no need for servo stop values because the servos can be detached with each respective state. 
 This library is written on top of the native Servo Arduino library.
-_
+_____________________________________________
 Methods:
 1. RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
 2. getState() --> returns the current state of the robot.
