@@ -1,4 +1,4 @@
--Advanced Servo Library for Arduino
+Advanced Servo Library for Arduino
 -
 ____________________________________________
 RobotServos is a Arduino Library used to simplify servo control on basic, two wheeled robots.
@@ -22,3 +22,4 @@ Methods:
 4. inverse() --> inverts the output of the servos in case they were mounted in the wrong direction.
 _____________________________________________
 Created by Jack Blair
+-
