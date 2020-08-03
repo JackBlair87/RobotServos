@@ -14,6 +14,6 @@ Both servos are moved at their max speed and will do so until the state is chang
 One major advantage of this library is that there is no need for servo stop values because the servos can be detached with each respective state. 
 This library is written on top of the native Servo Arduino library.
 ______________________________________________
-
 Methods:
-1. RobotServos(int rightPin, int leftPin); 
+-RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
+-
