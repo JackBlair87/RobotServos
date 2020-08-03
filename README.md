@@ -15,3 +15,5 @@ One major advantage of this library is that there is no need for servo stop valu
 This library is written on top of the native Servo Arduino library.
 ______________________________________________
 
+Methods:
+1. RobotServos(int rightPin, int leftPin); 
