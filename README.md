@@ -16,5 +16,9 @@ One major advantage of this library is that there is no need for servo stop valu
 This library is written on top of the native Servo Arduino library.
 ______________________________________________
 Methods:
-RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
-
+1. RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
+2. getState() --> returns the current state of the robot.
+3. setState(int newPosition) --> changes the state of the robot.
+4. inverse() --> inverts the output of the servos in case they were mounted in the wrong direction.
+_____________________________________________
+Created by Jack Blair
