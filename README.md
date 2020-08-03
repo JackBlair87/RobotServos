@@ -1,4 +1,5 @@
-Advanced Servo Library for Arduino
+-Advanced Servo Library for Arduino
+-
 ____________________________________________
 RobotServos is a Arduino Library used to simplify servo control on basic, two wheeled robots.
 
@@ -15,5 +16,5 @@ One major advantage of this library is that there is no need for servo stop valu
 This library is written on top of the native Servo Arduino library.
 ______________________________________________
 Methods:
--RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
--
+RobotServos(int rightPin, int leftPin) --> creates a new RobotServos with the pin of the right servo, and pin of the left servo.
+
